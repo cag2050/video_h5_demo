@@ -16,12 +16,12 @@ safari        | 没有 | 能
 * 不要自己加暂停时视频中间的继续播放按钮，要使用浏览器默认的。
 * 暂停时，页面显示浮层，使用pause事件添加。
 
-播放控制按钮的显示和隐藏：
-css：controls="controls"
-js: document.getElementById('video1').controls = true 或 false
+播放控制按钮的显示和隐藏：  
+css：controls="controls"  
+js: document.getElementById('video1').controls = true 或 false  
 
-问题：在iframe中不能全屏播放视频
-解决：将iframe修改成
+问题：在iframe中不能全屏播放视频  
+解决：将iframe修改成  
 ```
 <iframe … allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true">
 ```  
