@@ -1,5 +1,4 @@
 # video_h5_demo
-h5的video标签使用（各手机浏览器兼容性、加遮盖层等），待补充
 
 video标签在各手机浏览器的兼容性：
 
@@ -25,5 +24,8 @@ js: document.getElementById('video1').controls = true 或 false
 ```
 <iframe … allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true">
 ```  
+
+重要：
+h5的video标签，修改source的src地址，必须采用动态插入source元素的形式，否则浏览器不会重新请求播放资源。
 
 
