@@ -27,5 +27,12 @@ js: document.getElementById('video1').controls = true 或 false
 
 * 重要：
 h5的video标签，修改source的src地址，必须采用动态插入source元素的形式，否则浏览器不会重新请求播放资源。
+jquery 代码例子：
+
+```
+var sourceDom = $("<source type='video/mp4' src='xxx.mp4'>");
+
+$("#h5video").append(sourceDom);
+```
 
 
